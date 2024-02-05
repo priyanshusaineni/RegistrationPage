@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Registration</title>
+</head>
+<body style="background-color: beige;">
+  <main>
+          <h1 style="text-align: center; background-color:powderblue;">REGISTRATION FORM</h1>
+      <div>
+        <table align="center">
+          <tr>
+            <td>Name :</td>
+            <td><input type="text" placeholder="Enter Name" id="uname"></td>
+            <td><p id="valid-name" style="color: rgb(207, 19, 19); font-size: larger;">Name invalid</p></td>
+          </tr>
+          <tr>
+            <td>Roll Number :</td>
+            <td><input type="text" placeholder="Enter Roll Number" id="uid"></td>
+            <td><p id="valid-roll" style="color: rgb(189, 18, 18); font-size: larger;">Roll number invalid</p></td>
+          </tr>
+          <tr>
+            <td>Branch :</td>
+            <td>
+              <select>
+                <option>Select</option>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>IT</option>
+                <option>CSC</option>
+                <option>AIML</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Section :</td>
+            <td>
+              <select>
+                <option>Select</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Email :</td>
+            <td><input type="text" id="email" placeholder="Enter Email"></td>
+            <td><p id="valid-email" style="color: rgb(216, 8, 8); font-size: larger;">Email invalid</p></td>
+
+          </tr>
+          <tr>
+            <td>Gender :</td>
+            <td>
+              <label for="gendermale">
+                <input type="radio" name="Gender" value="m" id="gendermale"> Male
+              </label>
+              <label for="genderfemale">
+                <input type="radio" name="Gender" value="f" id="genderfemale"> Female
+              </label>
+              <label for="genderothers">
+                <input type="radio" name="Gender" value="o" id="genderothers"> Others
+              </label>
+            </td>
+          <tr>
+            <tr>
+              <td>DOB :</td>
+              <td><input type="date"></td>
+            <tr>
+            <td>Phone no :</td>
+            <td>
+              <select>
+                <option>code</option>
+                <option>+91</option>
+                <option>+92</option>
+                <option>+93</option>
+                <option>+94</option>
+                <option>+95</option>
+              </select>
+              <input type="phone" placeholder="91773***" id="unum">
+            <td><p id="valid-num" style="color: rgb(207, 18, 18); font-size: larger;">Number invalid</p></td>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Address:
+            </td>
+            <td>
+              <textarea placeholder="Enter Address" maxlength="100"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><button id="btn">SUBMIT</button></td>
+          </tr>
+        </table>
+      </div>
+  </main>
+  <hr>
+  <footer align="center">
+    <h3>Copyright &copy; 2023 CVR College of Engineering, All Rights Reserved </h3>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./jQuery.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
